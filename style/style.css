@@ -86,6 +86,9 @@ header {
   gap: 1rem;
 }
 
+
+
+
 /*HERO*/
 .hero--container {
   background-color: #fdf2e9;
@@ -289,7 +292,7 @@ header {
   color: #aaa;
 }
 
-.cta *:focus {
+.cta-form *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
@@ -334,4 +337,17 @@ header {
   color: #555;
 }
 
+.tel-cta,
+.tel-cta:link,
+.tel-cta:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+
+
 /*FOOTER*/
+.footer{
+  border-top: solid 1px #eee;
+}

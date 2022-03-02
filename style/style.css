@@ -21,9 +21,8 @@ header {
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
-  background-color: #f8f8f8;
+  background-color: #fdf2e9;
 }
-
 
 /*NAV*/
 
@@ -89,7 +88,7 @@ header {
 
 /*HERO*/
 .hero--container {
-  background-color: #f8f8f8;
+  background-color: #fdf2e9;
 }
 
 .hero {
@@ -185,8 +184,9 @@ header {
 .card-icon {
   height: 3.2rem;
   width: 3.2rem;
-  background-color: 
-  #f8f8f8;
+  background-color: #fdf2e9;
+  /*#f8f8f8; */
+  color: #e67e22;
   padding: 1.6rem;
   border-radius: 50%;
 }
@@ -194,7 +194,7 @@ header {
 /*Testimonials*/
 
 .testimonials-section {
-  background-color: #f8f8f8;
+  background-color: #fdf2e9;
   padding-top: 2.4rem;
   display: grid;
 }
@@ -207,10 +207,9 @@ header {
 
 .cta {
   max-width: 145rem;
- padding: 0 3.2rem;
- margin: 0 auto;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
-
 
 .cta-box {
   width: auto;

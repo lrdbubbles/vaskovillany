@@ -13,8 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="script" href=""
 
-    <link
+    
       rel="apple-touch-icon"
       sizes="180x180"
       href="icons/apple-touch-icon.png"
@@ -32,6 +33,7 @@
       href="icons/favicon-16x16.png"
     />
     <link rel="manifest" href="icons/site.webmanifest" />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -44,9 +46,9 @@
           <li><a class="main-nav-link" href="#testimonials">Vélemények</a></li>
           <li><a class="main-nav-link nav-cta" href="#cta">Kapcsolat</a></li>
           <li>
-            <a class="main-nav-link nav-tel-icon" href="tel:+36301234567">
+            <a class="main-nav-link nav-tel-icon" href="tel:+36305611399">
               <ion-icon class="nav-icon" name="call-outline"></ion-icon> 06 30
-              123 - 4567</a
+              561 - 1399</a
             >
           </li>
         </ul>
@@ -185,9 +187,9 @@
         <div class="cta">
         <div class="cta-box">
           <div class="cta-text-box">
-            <h2 class="cta-h2">Keressen e-mail-en!</h2>
+            <h2 class="cta-h2">Keressen bátran!</h2>
             <p class="cta-text">
-              Küldjön üzenetet a weblapról, vagy keressen telefonon a <a class="tel-cta" href="tel:+36301234567">+36 30 1234567</a> számon!
+              Küldjön üzenetet kényelmesen a weblapról, vagy keressen telefonon a <a class="tel-cta" href="tel:+36305611399">+36 30 561 1399</a> számon!
                           </p>
                           
                           <!-- into form: action="https://formsubmit.co/your@email.com" method="POST" -->
@@ -222,15 +224,7 @@
             </div>
             <div class="label-msg">
               <label id="label-msg"  for="message">Üzenet</label>
-              <!--<input
-              class ="text-input"
-              type="text"
-              id="cta-message"
-              placeholder="Az ön üzenete..."
-              required
-              />-->
-
-              <textarea class="text-area"
+               <textarea class="text-area"
               placeholder="Az ön üzenete..."
               required></textarea>
 
@@ -248,9 +242,39 @@
     </main>
     
     <footer class="footer">
-      <img class="logo" alt="Vasko Villany logo" src="img/logo1.png" />
-      <p>E-mail: vaskovillany@gmail.com</p>
-      <p>Telefonszám: +36 30 123 4567</p>
+      <div class="footer-grid">
+        <div class="footer-col">     
+          
+          <a href="#" class="footer-logo">
+          <img class="logo" alt="Vasko Villany logo" src="img/logo1.png" /></a>
+
+      <ul class="social-links">
+        <li>
+          <a class="footer-link" href="#hero"
+            ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.facebook.com/vaskovillany"
+            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Copyright &copy; <span class="year">2022</span> All rights reserved.
+      </p><br>
+      <p>Site by: vekasweb</p>
+    </div>
+
+      <div>
+        <p class="footer-heading">Kapcsolat</p>
+        
+          <ul class="social-links footer-con-link">
+            <li>
+        <a class="footer-link" href="mailto:vaskovillany@gmail.com">E-mail: vaskovillany@gmail.com</a></li>
+        <li><a class="footer-link" href="tel:+36305611399">Telefonszám: +36 30 561 1399</a></li></div>
+    </p>
+         </div>
     </footer>
     
     <script

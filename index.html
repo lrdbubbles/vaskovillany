@@ -13,30 +13,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="script" href=""
-
-    
-      rel="apple-touch-icon"
+    <link rel="stylesheet" href="./style/queries.css">
+    <link rel="icon" 
+        rel="apple-touch-icon"
       sizes="180x180"
-      href="icons/apple-touch-icon.png"
+      href="./icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="icons/favicon-32x32.png"
+      href="./icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="icons/favicon-16x16.png"
+      href="./icons/favicon-16x16.png"
     />
     <link rel="manifest" href="icons/site.webmanifest" />
     <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
       <a href="#hero">
         <img class="logo" alt="Vasko Villany logo" src="img/logo1.png" />
       </a>
@@ -53,10 +56,15 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
-      <div class="hero--container" id="services">
+      <section class="section-hero">
+      <div class="hero--container">
         <div class="hero">
           <div class="hero-textbox">
             <h1 class="hero-headline">
@@ -81,7 +89,7 @@
           </figure>
         </div>
       </div>
-
+    </section>
       <section>
         <div class="services" id="services">
           <h2 class="h2-title">Szolgáltatások</h2>
@@ -138,31 +146,25 @@
           <figure class="testimonial">
             <img
               class="testimonial-img"
-              alt="Photo of customer USER1"
-              src="#"
+              alt="Photo of customer F.Vivien"
+              src="./img/user_vivi.jpg"
             />
             <blockquote class="testimonial-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsa
-              quisquam non delectus eaque aliquid deleniti nulla ad in ipsam?
-              Veniam quos molestias corporis a repudiandae vel aliquam, atque
-              iure.
+              "Profi, korrekt, megbízható szakember! Ajánlom."
             </blockquote>
-            <p class="testimonial-name">&mdash; User User</p>
+            <p class="testimonial-name">&mdash; F. Vivien</p>
           </figure>
 
           <figure class="testimonial">
             <img
               class="testimonial-img"
               alt="Photo of customer USER2"
-              src="#"
+              src="./img/customer_marci.jpg"
             />
             <blockquote class="testimonial-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-              deserunt numquam. Voluptas quidem illum nam rerum ut corrupti?
-              Repudiandae deleniti natus error totam repellendus ut quae
-              molestias reiciendis magni veniam?
-            </blockquote>
-            <p class="testimonial-name">&mdash; USER USER</p>
+              "Gergő gyorsan felmérte a helyzetet, majd az egyeztetett időpontban megjött és elvégezte az összes munkát amit kértem.  "
+               </blockquote>
+            <p class="testimonial-name">&mdash; V. Márton</p>
           </figure>
 
           <figure class="testimonial">
@@ -174,16 +176,15 @@
             <blockquote class="testimonial-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
               sint consequuntur, animi facilis possimus mollitia nihil
-              repudiandae labore quidem, assumenda aliquam, iure numquam minima
-              laborum ut voluptatum voluptas. Quos, quidem?
+              repudiandae labore quidem,
             </blockquote>
             <p class="testimonial-name">&mdash; USER USER</p>
           </figure>
-        </div>
-      </section>
+          </div>
+          </section>
 
       <section class="section-cta" id="cta">
-        <h2 class="h2-title">Kapcsolat</h2>
+        <h2 class="h2-title h2-cta">Kapcsolat</h2>
         <div class="cta">
         <div class="cta-box">
           <div class="cta-text-box">
@@ -196,7 +197,7 @@
                           
                           <form class="cta-form">
                             <div class="label-name">
-                              <label id="label-name" for="full-name">Az Ön teljes neve</label>
+                              <label  for="full-name">Az Ön teljes neve</label>
                               <input
                               type="text"
                               id="full-name"
@@ -205,7 +206,7 @@
                               />
                             </div>
                             <div class="label-mail">
-                              <label id="label-mail" for="e-mail">Az Ön e-mail címe</label>
+                              <label  for="e-mail">Az Ön e-mail címe</label>
                               <input
                               type="email"
                               id="cta-mail"
@@ -214,7 +215,7 @@
                               />
                             </div>
                             <div class="label-phone">
-              <label id="label-phone" for="telephone">Az Ön telefonszáma</label>
+              <label for="telephone">Az Ön telefonszáma</label>
               <input
               type="tel"
               id="form-tel"
@@ -223,33 +224,35 @@
               />
             </div>
             <div class="label-msg">
-              <label id="label-msg"  for="message">Üzenet</label>
+              <label  for="message">Üzenet</label>
                <textarea class="text-area"
               placeholder="Az ön üzenete..."
               required></textarea>
+              </div>
 
-
-            </div class="form-btn">
+            <div class="form-btn">
             <button class="btn btn--cta">Üzenet küldése</button>
-          </form>
+          </div>
         </div>
-          <div class="cta-img-box"
-          role="image"
-          ></div>
-        </div>
+            </form>
+            <div class="cta-img-box"
+            role="image"
+           ></div>
+        
         </div>
       </section>
     </main>
     
     <footer class="footer">
+      <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-col">     
           
           <a href="#" class="footer-logo">
           <img class="logo" alt="Vasko Villany logo" src="img/logo1.png" /></a>
 
-      <ul class="social-links">
-        <li>
+          <ul class="social-links">
+          <li>
           <a class="footer-link" href="#hero"
             ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
           ></a>
@@ -259,22 +262,24 @@
             ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
           ></a>
         </li>
-      </ul>
-      <p class="copyright">
+        </ul>
+        <p class="copyright">
         Copyright &copy; <span class="year">2022</span> All rights reserved.
-      </p><br>
-      <p>Site by: vekasweb</p>
-    </div>
+       </p><br>
+        </div>
+    
+    
 
-      <div>
+        <div class="footer-contact">
         <p class="footer-heading">Kapcsolat</p>
         
           <ul class="social-links footer-con-link">
             <li>
         <a class="footer-link" href="mailto:vaskovillany@gmail.com">E-mail: vaskovillany@gmail.com</a></li>
         <li><a class="footer-link" href="tel:+36305611399">Telefonszám: +36 30 561 1399</a></li></div>
-    </p>
-         </div>
+          </div>
+        </div>
+      </div>
     </footer>
     
     <script
